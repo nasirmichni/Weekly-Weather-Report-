@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="weathericon.png" type="image/x-icon">
+    <title>Weather App</title>
+
+</head>
+<body>
+    <video autoplay muted loop id="video-background">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <h1 id="city-name">Weekly Weather Forecast for Peshawar</h1>
+    <div class="input-group">
+        <input type="text" id="city-input" class="wide-input" placeholder="Enter city name">
+        <button onclick="searchWeather()" class="search-button">Search</button>
+    </div>
+    <div id="weather-container"></div>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Nasir Khan All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="waather.js"></script> 
+   <script src="weather.js"></script>
+   
+</body>
+</html>
